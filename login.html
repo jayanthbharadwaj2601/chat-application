@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body
+		{
+			overflow-x: hidden;
+			background-image: url('background_chat_program.jpg');
+			background-size:2000px;
+		}
+		h1
+		{
+			color: white;
+			background-color: black;
+			width: 32%;
+			border-radius: 10px;
+			font-family: arial;
+			padding: 1% 1%;
+			box-shadow: 5px 5px 5px grey;
+		}
+		.credentials
+		{
+			padding: 1% 1%;
+			font-family: arial;
+			font-weight: bold;
+			font-size: 20px;
+			box-shadow: 5px 5px 5px grey;
+		}
+		#formoverall
+		{
+			position: relative;
+			left: 32.5%;
+			top: 100px;
+		}
+		#submit
+		{
+			padding: 1% 1%;
+			font-family: arial;
+			font-weight: bold;
+			font-size: 20px;
+			position: relative;
+			left: 8%;
+			color: white;
+			background-color: #00008b;
+			border-radius: 15px;
+			box-shadow: 5px 5px 5px grey;
+		}
+	</style>
+</head>
+<body>
+	<form action="homepage.php" method="POST" id="formoverall">
+		<h1>Enter Username</h1>
+		<br>
+		<input type="text" name="username" required="true" class="credentials">
+		<br>
+		<h1>Enter Password</h1>
+		<br>
+		<input type="password" name="password" required="true" class="credentials">
+		<br>
+		<br>
+		<input type="submit" name="submit" value="login" id="submit">
+	</form>
+</body>
+</html>
