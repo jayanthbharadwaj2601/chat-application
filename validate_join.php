@@ -2,6 +2,7 @@
 <html>
 <head>
 	<script>
+/* source of the function down below: https://www.encodedna.com/javascript/auto-refresh-page-every-10-second-using-javascript-setInterval-method.htm*/
     window.setInterval('refresh()', 12000); 	// Call a function every 10000 milliseconds (OR 10 seconds).
     // Refresh or reload page.
     function refresh() {
@@ -14,15 +15,15 @@
     	if (name !== null) document.getElementById('y1').value=name;
     	document.getElementById('y1').focus();
     }
-    function erase()
-    {
-    	sessionStorage.setItem("name","");
-    }
-    window.onpopstate = function(event) {
-    if(event){
-        window.location.href = 'https://www.google.com/';
-        // Code to handle back button or prevent from navigation
-    }
+//     function erase()
+//     {
+//     	sessionStorage.setItem("name","");
+//     }
+//     window.onpopstate = function(event) {
+//     if(event){
+//         window.location.href = 'https://www.google.com/';
+//         // Code to handle back button or prevent from navigation
+//     }
 }
 </script>
 <style type="text/css">
