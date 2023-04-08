@@ -15,15 +15,15 @@
     	if (name !== null) document.getElementById('y1').value=name;
     	document.getElementById('y1').focus();
     }
-//     function erase()
-//     {
-//     	sessionStorage.setItem("name","");
-//     }
-//     window.onpopstate = function(event) {
-//     if(event){
-//         window.location.href = 'https://www.google.com/';
-//         // Code to handle back button or prevent from navigation
-//     }
+     function erase()
+     {
+     	sessionStorage.setItem("name","");
+     }
+     window.onpopstate = function(event) {
+     if(event){
+         window.location.href = 'https://www.google.com/';
+         // Code to handle back button or prevent from navigation
+     }
 }
 </script>
 <style type="text/css">
