@@ -9,16 +9,19 @@
     	sessionStorage.setItem("name",document.getElementById('y1').value);
         window .location.reload();
     }
+    //function taken from external sources
     window.onload = function()
     {
     	var name = sessionStorage.getItem("name");
     	if (name !== null) document.getElementById('y1').value=name;
     	document.getElementById('y1').focus();
     }
+   //function taken from external sources
      function erase()
      {
      	sessionStorage.setItem("name","");
      }
+    //function taken from external sources
      window.onpopstate = function(event) {
      if(event){
          window.location.href = 'https://www.google.com/';
